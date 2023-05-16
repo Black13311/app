@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="videoTxt" type="id" />
+    <item name="userProfilePic" type="id" />
+    <item name="myLayout" type="id" />
+</resources>
