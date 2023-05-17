@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.whistile'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.whistile"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.3.0'
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.mikhaellopez:circularimageview:4.3.1'
+    implementation 'androidx.test:monitor:1.6.1'
+    implementation 'androidx.test.ext:junit:1.1.5'
+
+    // Testing dependencies
+    testImplementation 'junit:junit:4.13.2'
+
+}
+
+
+
